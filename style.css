@@ -1,0 +1,8 @@
+section.um{
+    width: 70%;
+    margin-top: 40px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
