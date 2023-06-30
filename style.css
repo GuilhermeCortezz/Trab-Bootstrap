@@ -2,7 +2,10 @@ section.um{
     width: 70%;
     margin-top: 40px;
 }
-main{
+div.carrossel{
     display: flex;
     justify-content: center;
+}
+.carousel {
+    width:100%; 
 }
