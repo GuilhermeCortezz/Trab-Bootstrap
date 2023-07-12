@@ -1,22 +1,27 @@
 *{
-    font-family: 'Jockey One';
+  font-family: 'Jockey One';
 }
-section#um{
+
+section#um {
     width: 70%;
     margin-top: 100px;
 }
-section a{
+
+section h2 {
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-div#carrossel{
+
+div#carrossel {
     display: flex;
     justify-content: center;
 }
+
 .carousel {
-    width:100%; 
+    width: 100%;
 }
+
 .animacao {
     margin-top: 20px;
     position: relative;
@@ -25,53 +30,121 @@ div#carrossel{
     animation: move 5s infinite;
     width: 10vw;
 }
-.animacao img{
+
+.animacao img {
     width: 10vw;
 }
+
 @media screen and (max-width: 500px) {
     .animacao {
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
 }
+
 @media screen and (max-width: 300px) {
     .animacao {
-    width: 30px;
-    height: 30px;
+        width: 30px;
+        height: 30px;
     }
 }
+
 @keyframes move {
     0% {
-    left: 10%;
+        left: 10%;
     }
     50% {
-    left: 80%;
+        left: 80%;
     }
     100% {
-    left: 10%;
+        left: 10%;
     }
 }
-section#dois{
+
+section#dois {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-form .btn{
+
+form .btn {
     background-color: black;
     margin-top: 10px;
     border-color: gray;
 }
-form .btn:hover{
+
+form .btn:hover {
     background-color: rgb(65, 65, 65);
 }
-section#tres{
+
+section#tres {
     margin: 20px;
     margin-top: 70px;
 }
-section#quatro{
+
+section#quatro {
     margin: 20px;
     margin-top: 70px;
+    font-size: 40px;
 }
-footer{
+
+div.curiosidade {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+div.curiosidade p {
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+@media (max-width: 1200px) {
+    section#quatro {
+        font-size: 30px;
+    }
+    div.curiosidade{
+        flex-wrap: wrap;
+    }
+    div.curiosidade p {
+        max-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    section#quatro {
+        font-size: 20px;
+    }
+    div.curiosidade p {
+        max-width: 100%;
+    }
+}
+
+footer {
     background-color: black;
+    padding: 20px;
     color: white;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
